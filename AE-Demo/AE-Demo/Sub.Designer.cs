@@ -32,24 +32,24 @@ namespace AE_Demo
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sub));
             this.axLicenseControl1 = new ESRI.ArcGIS.Controls.AxLicenseControl();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.axSceneControl1 = new ESRI.ArcGIS.Controls.AxSceneControl();
             this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
-            this.axLicenseControl2 = new ESRI.ArcGIS.Controls.AxLicenseControl();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.axTOCControl1 = new ESRI.ArcGIS.Controls.AxTOCControl();
+            this.axLicenseControl2 = new ESRI.ArcGIS.Controls.AxLicenseControl();
+            this.axSceneControl1 = new ESRI.ArcGIS.Controls.AxSceneControl();
             ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axSceneControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axTOCControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axSceneControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // axLicenseControl1
@@ -79,6 +79,15 @@ namespace AE_Demo
             this.splitContainer1.SplitterDistance = 35;
             this.splitContainer1.TabIndex = 2;
             // 
+            // axToolbarControl1
+            // 
+            this.axToolbarControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axToolbarControl1.Location = new System.Drawing.Point(0, 0);
+            this.axToolbarControl1.Name = "axToolbarControl1";
+            this.axToolbarControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl1.OcxState")));
+            this.axToolbarControl1.Size = new System.Drawing.Size(800, 28);
+            this.axToolbarControl1.TabIndex = 0;
+            // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -97,23 +106,14 @@ namespace AE_Demo
             this.splitContainer2.SplitterDistance = 239;
             this.splitContainer2.TabIndex = 0;
             // 
-            // axSceneControl1
+            // axTOCControl1
             // 
-            this.axSceneControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axSceneControl1.Location = new System.Drawing.Point(0, 0);
-            this.axSceneControl1.Name = "axSceneControl1";
-            this.axSceneControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axSceneControl1.OcxState")));
-            this.axSceneControl1.Size = new System.Drawing.Size(557, 411);
-            this.axSceneControl1.TabIndex = 0;
-            // 
-            // axToolbarControl1
-            // 
-            this.axToolbarControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axToolbarControl1.Location = new System.Drawing.Point(0, 0);
-            this.axToolbarControl1.Name = "axToolbarControl1";
-            this.axToolbarControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl1.OcxState")));
-            this.axToolbarControl1.Size = new System.Drawing.Size(800, 28);
-            this.axToolbarControl1.TabIndex = 0;
+            this.axTOCControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axTOCControl1.Location = new System.Drawing.Point(0, 0);
+            this.axTOCControl1.Name = "axTOCControl1";
+            this.axTOCControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl1.OcxState")));
+            this.axTOCControl1.Size = new System.Drawing.Size(239, 411);
+            this.axTOCControl1.TabIndex = 0;
             // 
             // axLicenseControl2
             // 
@@ -124,14 +124,14 @@ namespace AE_Demo
             this.axLicenseControl2.Size = new System.Drawing.Size(32, 32);
             this.axLicenseControl2.TabIndex = 1;
             // 
-            // axTOCControl1
+            // axSceneControl1
             // 
-            this.axTOCControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axTOCControl1.Location = new System.Drawing.Point(0, 0);
-            this.axTOCControl1.Name = "axTOCControl1";
-            this.axTOCControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl1.OcxState")));
-            this.axTOCControl1.Size = new System.Drawing.Size(239, 411);
-            this.axTOCControl1.TabIndex = 0;
+            this.axSceneControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axSceneControl1.Location = new System.Drawing.Point(0, 0);
+            this.axSceneControl1.Name = "axSceneControl1";
+            this.axSceneControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axSceneControl1.OcxState")));
+            this.axSceneControl1.Size = new System.Drawing.Size(557, 411);
+            this.axSceneControl1.TabIndex = 0;
             // 
             // Sub
             // 
@@ -148,14 +148,14 @@ namespace AE_Demo
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axSceneControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axTOCControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axSceneControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
