@@ -35,12 +35,18 @@ const material = {
   specularColor: [51, 51, 51]
 };
 
+var ZoomNum = 7.0
+
+export function enLarge() {
+  ZoomNum = ZoomNum + 0.1
+}
+
 const INITIAL_VIEW_STATE = {
   // longitude: -1.415727,
   // latitude: 52.232395,
   longitude: 115.856151,
   latitude: 28.687601,
-  zoom: 7.0,
+  zoom: ZoomNum,
   minZoom: 5,
   maxZoom: 15,
   pitch: 40.5,
